@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %}
+    Junior Secondary School 1 Students
+{% endblock %}
+<link rel="stylesheet" href="{% static 'static.css' %}">
+{% block content %}
+    {% for x in js1 %}
+     <h3><a href="djs1/{{x.id}}">{{x.id}} {{x.First_Name}} {{x.Last_Name}}</a></h3>
+    {% endfor %}
+
+    <h3>Go Back To: <a href="..">Administration Block/Page</a></h3>
+{% endblock %}

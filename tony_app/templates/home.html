@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block title %}
+    Administration Block
+{% endblock %}
+<link rel="stylesheet" href="{% static 'static.css' %}">
+{% block content %}
+    <h2>Vertical Limit Academy's Administration Block </h2>
+    <h3>Welcome to VERTICAL LIMIT ACADEMY's Administration Block</h3>
+    <h3>Click on any of the classes below to view it's students content: </h3>
+
+    <h3>See: <a href="js1/">Junior Secondary School 1 Students</a></h3>
+    <h3>See: <a href="js2/">Junior Secondary School 2 Students</a></h3>
+    <h3>See: <a href="js3/">Junior Secondary School 3 Students</a></h3>
+{% endblock %}
