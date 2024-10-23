@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'design.css' %}">
+{% block title %}
+    Junior Secondary School 3 Students
+{% endblock %}
+
+{% block content %}
+    <h2>Junior Secondary School 3 Students</h2>
+    {% for x in js3 %}
+        <h3><a href="djs3/{{x.id}}">{{x.id}} {{x.First_Name}} {{x.Last_Name}}</a></h3>
+    {% endfor %}
+
+{% endblock %}

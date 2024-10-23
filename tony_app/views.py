@@ -27,7 +27,7 @@ def jss2(request):
 
 def djss2(request, id):
     model = JSS2.objects.get(id = id)
-    template = loader.get_template('djs22.html')
+    template = loader.get_template('djs2.html')
     context = {'djs2':model}
     return HttpResponse(template.render(request = request, context = context))
 

@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'design.css' %}">
+{% block title %}
+    {{djs2.First_Name}}'s Details
+{% endblock %}
+
+{% block cotent %}
+    <h2>{{djs2.First_Name}}'s Details</h2>
+    <h3>First Name: {{djs2.First_Name}}</h3>
+    <h3>Last Name: {{djs2.Last_Name}}</h3>
+    <h3>Age: {{djs2.Age}}</h3>
+    <h3>Father's Phone Number: {{djs2.Fathers_Phone_Number}}</h3>
+    <h3>Mother's Phone Number: {{djs2.Mothers_Phone_Number}}</h3>
+
+    <h3>Go Back To: <a href="..">Junior Secondary School 2 Students</a></h3>
+{% endblock %}
